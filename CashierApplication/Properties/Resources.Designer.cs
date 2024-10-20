@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CashierApplication.Properties {
+namespace CashierApplicationEx2.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CashierApplication.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CashierApplication.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CashierApplicationEx2.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -66,6 +66,16 @@ namespace CashierApplication.Properties {
         internal static System.Drawing.Bitmap Dove_and_Flag_of_Ukraine_Instagram_Post {
             get {
                 object obj = ResourceManager.GetObject("Dove and Flag of Ukraine Instagram Post", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Green_Illustrative_Run_with_the_Rising_Sun_Poster {
+            get {
+                object obj = ResourceManager.GetObject("Green Illustrative Run with the Rising Sun Poster", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

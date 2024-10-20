@@ -44,13 +44,18 @@
             BSubmit = new Button();
             label8 = new Label();
             LBChange = new Label();
+            menuStrip1 = new MenuStrip();
+            MTFile = new ToolStripMenuItem();
+            logoutToolStripMenuItem = new ToolStripMenuItem();
+            exitApplicationToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Bahnschrift Condensed", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(88, 35);
+            label1.Location = new Point(103, 33);
             label1.Name = "label1";
             label1.Size = new Size(47, 25);
             label1.TabIndex = 0;
@@ -60,7 +65,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Bahnschrift Condensed", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(479, 35);
+            label2.Location = new Point(494, 33);
             label2.Name = "label2";
             label2.Size = new Size(99, 25);
             label2.TabIndex = 1;
@@ -68,7 +73,7 @@
             // 
             // TBItem
             // 
-            TBItem.Location = new Point(88, 75);
+            TBItem.Location = new Point(103, 73);
             TBItem.Name = "TBItem";
             TBItem.Size = new Size(240, 23);
             TBItem.TabIndex = 2;
@@ -77,7 +82,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Bahnschrift Condensed", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(88, 124);
+            label3.Location = new Point(103, 122);
             label3.Name = "label3";
             label3.Size = new Size(51, 25);
             label3.TabIndex = 3;
@@ -85,21 +90,21 @@
             // 
             // TBPrice
             // 
-            TBPrice.Location = new Point(145, 126);
+            TBPrice.Location = new Point(160, 124);
             TBPrice.Name = "TBPrice";
             TBPrice.Size = new Size(183, 23);
             TBPrice.TabIndex = 4;
             // 
             // TBDiscount
             // 
-            TBDiscount.Location = new Point(479, 75);
+            TBDiscount.Location = new Point(494, 73);
             TBDiscount.Name = "TBDiscount";
             TBDiscount.Size = new Size(128, 23);
             TBDiscount.TabIndex = 5;
             // 
             // TBQuantity
             // 
-            TBQuantity.Location = new Point(502, 130);
+            TBQuantity.Location = new Point(517, 128);
             TBQuantity.Name = "TBQuantity";
             TBQuantity.Size = new Size(105, 23);
             TBQuantity.TabIndex = 6;
@@ -108,7 +113,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Bahnschrift Condensed", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(420, 124);
+            label4.Location = new Point(435, 122);
             label4.Name = "label4";
             label4.Size = new Size(76, 25);
             label4.TabIndex = 7;
@@ -121,7 +126,7 @@
             BCompute.FlatStyle = FlatStyle.Popup;
             BCompute.Font = new Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BCompute.ForeColor = SystemColors.ButtonHighlight;
-            BCompute.Location = new Point(341, 176);
+            BCompute.Location = new Point(356, 174);
             BCompute.Name = "BCompute";
             BCompute.Size = new Size(104, 29);
             BCompute.TabIndex = 8;
@@ -133,7 +138,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Bahnschrift Condensed", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(220, 239);
+            label5.Location = new Point(235, 237);
             label5.Name = "label5";
             label5.Size = new Size(108, 25);
             label5.TabIndex = 9;
@@ -143,7 +148,7 @@
             // 
             LBAmount.AutoSize = true;
             LBAmount.Font = new Font("Bahnschrift Condensed", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LBAmount.Location = new Point(351, 239);
+            LBAmount.Location = new Point(366, 237);
             LBAmount.Name = "LBAmount";
             LBAmount.Size = new Size(94, 25);
             LBAmount.TabIndex = 10;
@@ -153,7 +158,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Bahnschrift Condensed", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(159, 298);
+            label7.Location = new Point(174, 296);
             label7.Name = "label7";
             label7.Size = new Size(140, 25);
             label7.TabIndex = 11;
@@ -161,7 +166,7 @@
             // 
             // TBPayment
             // 
-            TBPayment.Location = new Point(314, 304);
+            TBPayment.Location = new Point(329, 302);
             TBPayment.Name = "TBPayment";
             TBPayment.Size = new Size(150, 23);
             TBPayment.TabIndex = 12;
@@ -173,7 +178,7 @@
             BSubmit.FlatStyle = FlatStyle.Popup;
             BSubmit.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BSubmit.ForeColor = SystemColors.ButtonFace;
-            BSubmit.Location = new Point(503, 304);
+            BSubmit.Location = new Point(518, 302);
             BSubmit.Name = "BSubmit";
             BSubmit.Size = new Size(104, 33);
             BSubmit.TabIndex = 13;
@@ -201,6 +206,41 @@
             LBChange.TabIndex = 15;
             LBChange.Text = "The change";
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { MTFile });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 16;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // MTFile
+            // 
+            MTFile.Checked = true;
+            MTFile.CheckState = CheckState.Checked;
+            MTFile.DropDownItems.AddRange(new ToolStripItem[] { logoutToolStripMenuItem, exitApplicationToolStripMenuItem });
+            MTFile.Name = "MTFile";
+            MTFile.Size = new Size(37, 20);
+            MTFile.Text = "File";
+            MTFile.Click += MTFile_Click;
+            // 
+            // logoutToolStripMenuItem
+            // 
+            logoutToolStripMenuItem.Image = CashierApplicationEx2.Properties.Resources.Dove_and_Flag_of_Ukraine_Instagram_Post;
+            logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            logoutToolStripMenuItem.Size = new Size(180, 22);
+            logoutToolStripMenuItem.Text = "Logout";
+            logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click_1;
+            // 
+            // exitApplicationToolStripMenuItem
+            // 
+            exitApplicationToolStripMenuItem.Image = CashierApplicationEx2.Properties.Resources.Green_Illustrative_Run_with_the_Rising_Sun_Poster;
+            exitApplicationToolStripMenuItem.Name = "exitApplicationToolStripMenuItem";
+            exitApplicationToolStripMenuItem.Size = new Size(180, 22);
+            exitApplicationToolStripMenuItem.Text = "Exit Application";
+            exitApplicationToolStripMenuItem.Click += exitApplicationToolStripMenuItem_Click;
+            // 
             // frmPurchaseDiscountedItem
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -224,10 +264,14 @@
             Controls.Add(TBItem);
             Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(menuStrip1);
             DoubleBuffered = true;
+            MainMenuStrip = menuStrip1;
             Name = "frmPurchaseDiscountedItem";
             Text = "Purchase Discounted Item";
             Load += frmPurchaseDiscountedItem_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -250,5 +294,9 @@
         private Button BSubmit;
         private Label label8;
         private Label LBChange;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem MTFile;
+        private ToolStripMenuItem logoutToolStripMenuItem;
+        private ToolStripMenuItem exitApplicationToolStripMenuItem;
     }
 }

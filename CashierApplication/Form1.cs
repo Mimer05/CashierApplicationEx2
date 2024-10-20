@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using CashierApplication;
 using ItemNamespace;
+using CashierApplicationEx2;
 
 namespace CashierApplication
 {
@@ -11,6 +12,7 @@ namespace CashierApplication
         public frmPurchaseDiscountedItem()
         {
             InitializeComponent();
+
         }
         private void frmPurchaseDiscountedItem_Load(object sender, EventArgs e)
         {
@@ -63,6 +65,40 @@ namespace CashierApplication
             catch (FormatException)
             {
                 MessageBox.Show("Please enter a number for payment."); //when the payment is not number 
+            }
+        }
+
+
+        private void MTFile_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void exitApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation",
+              MessageBoxButtons.YesNo, MessageBoxIcon.Question); //if want to exit the application
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit(); // Exit the application
+            }
+        }
+
+        private void logoutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to Logout?", "Logout Confirmation",
+                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);// if they want to logout or not
+            if (result == DialogResult.Yes)
+            {
+                frmLoginAccount fla = new frmLoginAccount();// object of the class form1 to back again 
+                fla.Show();
+                this.Hide();// Exit the previous application
             }
         }
     }
